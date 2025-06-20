@@ -164,8 +164,30 @@ public class EasyArray {
         return false;
     }
 
+    //Maximum Product Subarray
+    public static int maxProduct(int[] nums) {
+        int maxSoFar = nums[0];
+        int minSofar = nums[0];
+        int globalMax = nums[0];
+
+        for(int i=1; i<nums.length; i++) {
+            if(nums[i] < 0) {
+                int temp = maxSoFar;
+                maxSoFar = minSofar;
+                minSofar = temp;
+            }
+            maxSoFar = Math.max(nums[i], nums[i]*maxSoFar);
+            minSofar = Math.min(nums[i], nums[i]*minSofar);
+            globalMax = Math.max(maxSoFar, globalMax);
+
+        }
+        return globalMax;
+    }
+
+
 
     public static void main(String[] args) {
-
+        int[] nums = {2,3,-2,4};
+        System.out.println(maxProduct(nums));
     }
 }
