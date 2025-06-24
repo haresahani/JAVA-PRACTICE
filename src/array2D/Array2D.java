@@ -16,16 +16,16 @@ public class Array2D {
     }
     public static void main(String[] args) {
 //        //create 2d array - Input and output
-//        int[][] matrix = new int[3][3];
+        int[][] matrix = new int[3][3];
 //        /* int[][] arr = { {1, 2, 3},
 //                           {4, 5, 6},
 //                           {7, 8, 9} }; */
-//        Scanner sc = new Scanner(System.in);
-//        for(int row=0; row<matrix.length; row++) {
-//            for(int col=0; col<matrix[0].length; col++) {
-//                matrix[row][col] = sc.nextInt();
-//            }
-//        }
+        Scanner sc = new Scanner(System.in);
+        for(int row=0; row<matrix.length; row++) {
+            for(int col=0; col<matrix[0].length; col++) {
+                matrix[row][col] = sc.nextInt();
+            }
+        }
 //
 //        //output
 //        for(int row=0; row < matrix.length; row++) {
