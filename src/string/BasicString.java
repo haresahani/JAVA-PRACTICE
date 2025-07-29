@@ -31,5 +31,35 @@ public class BasicString {
 //            System.out.print(fullName.charAt(i)+" ");
 //        }
 
+        //equality
+//        String str1 = "Hare";
+//        String str2 = "Hare";
+//
+//        String str3 = "hare";
+//        String str4 = new String("Hare");
+//        if(str1 == str2) {
+//            System.out.println("Strings are equals");
+//        } else {
+//            System.out.println("Strings are not equals");
+//        }
+//
+//        if(str1 == str3) {
+//            System.out.println("Strings are equals");
+//        } else {
+//            System.out.println("Strings are not equals");
+//        }
+//
+//        if(str1.equals(str4)) {
+//            System.out.println("Strings are equals");
+//        } else {
+//            System.out.println("Strings are not equals");
+//        }
+//
+//        if(str3 == str4) {
+//            System.out.println("Strings are equals");
+//        } else {
+//            System.out.println("Strings are not equals");
+//        }
+
     }
 }
