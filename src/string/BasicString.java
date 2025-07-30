@@ -61,5 +61,11 @@ public class BasicString {
 //            System.out.println("Strings are not equals");
 //        }
 
+        String name = "Harekrishna";
+//        System.out.println(name.length());
+        System.out.println(name.charAt(4));
+        String name2 = "harekrishna";
+        System.out.println(name.equals(name2));
+        System.out.println(name.equalsIgnoreCase(name2));
     }
 }
