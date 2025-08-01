@@ -1,36 +1,31 @@
 package string;
 
-public class ShortestPath {
-    public static float shortestPath(String str) {
-        int x = 0;
-        int y = 0;
+import java.sql.SQLOutput;
 
-        for(int i=0; i<str.length(); i++) {
-            char dir = str.charAt(i);
-            //West
+public class ShortestPath {
+    public static float shortestPath(String path) {
+        int X = 0;
+        int Y = 0;
+        for(int i=0; i<path.length(); i++) {
+            char dir = path.charAt(i);
+
             if(dir == 'W') {
-                y--;
-            }
-            //North
-            else if(dir == 'N') {
-               x++;
-            }
-            //East
-            else if(dir == 'E') {
-                y++;
-            }
-            //South
-            else {
-                x--;
+                Y--;
+            } else if(dir == 'E') {
+                Y++;
+            } else if(dir == 'N') {
+                X++;
+            } else{
+                X--;
             }
         }
-        int x2 = x*x;
-        int y2 = y*y;
+        int X2 = X*X;
+        int Y2 = Y*Y;
+        return (float)Math.sqrt(X2+Y2);
 
-        return (float)Math.sqrt(x2 + y2);
     }
     public static void main(String[] args) {
-        String str = "WNEENESENNN";
-        System.out.print(shortestPath(str));
+        String path = "WNEENESENNN";
+        System.out.println(shortestPath(path));
     }
 }

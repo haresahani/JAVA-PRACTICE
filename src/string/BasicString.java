@@ -1,4 +1,6 @@
 package string;
+import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BasicString {
@@ -61,11 +63,71 @@ public class BasicString {
 //            System.out.println("Strings are not equals");
 //        }
 
-        String name = "Harekrishna";
-//        System.out.println(name.length());
-        System.out.println(name.charAt(4));
-        String name2 = "harekrishna";
-        System.out.println(name.equals(name2));
-        System.out.println(name.equalsIgnoreCase(name2));
+//        String name = "Harekrishna";
+////        System.out.println(name.length());
+//        System.out.println(name.charAt(4));
+//        String name2 = "harekrishna";
+//        System.out.println(name.equals(name2));
+//        System.out.println(name.equalsIgnoreCase(name2));
+//
+//        float num = 23.3423423f;
+//        System.out.printf("Num: %.2f", num);
+
+//        String name = "Harekrishna";
+//        System.out.printf("My name is %s, %s", "Harekrishna", "Kumar");
+//
+
+//        System.out.println('a'+'b');
+//        System.out.println("a"+"b");
+//        System.out.println((char)('a' + 3));
+//
+//        System.out.println("hare" + new ArrayList<>());
+//
+//        for (int i=0; i<26; i++) {
+//            char ch = (char)('a'+i);
+//            System.out.print(ch+" ");
+//        }
+
+        StringBuilder sb = new StringBuilder();
+        for(int i=0; i<26; i++) {
+            char ch = (char)('a'+i);
+            sb.append(ch);
+        }
+        System.out.println(sb);
+        System.out.println(sb.length());
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
