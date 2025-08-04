@@ -11,7 +11,12 @@ public class BasicOfBitManipulation {
         int xor = 11 ^ 13;
         System.out.println("Binary XOR:> 11 ^ 13 = " + xor);
 
-        int not = ~5;
-        System.out.println("Binary ~:> ~5 = " + not);
+        int not = ~9;
+        System.out.println("Binary ~:> ~9 = " + not);
+
+        int leftShift = 5 << 5;
+        System.out.println("Binary <<, 5 << 5 = " + leftShift);
+
+        
     }
 }
