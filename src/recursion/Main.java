@@ -31,5 +31,14 @@ public class Main {
 
 //        X_To_The_Pow_N xn = new X_To_The_Pow_N();
 //        System.out.println(xn.calXN(2, 5));
+
+//        TilingProblem t = new TilingProblem();
+//        System.out.println(t.tiling(3));
+
+//        RemoveDubplicates rd = new RemoveDubplicates();
+//        rd.removeDup("abcdaa", 0, new StringBuilder(""), new boolean[26]);
+
+        FriendsPairing fp = new FriendsPairing();
+        System.out.println(fp.friendsPair(3));
     }
 }
